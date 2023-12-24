@@ -31,7 +31,19 @@ namespace Tyuiu.BardievaGA.Sprint1.Task4.V9
             Console.WriteLine("*ИСХОДНЫЕ ДАННЫЕ:                                                         *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            int x, y;
+
+            Console.WriteLine("Введите значение переменной x:");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение переменной y:");
+            y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("ln(x * y) / (x - sqrt (1 + y ^ 2) = " + ds.Calculate(x, y));
+            Console.ReadLine();
         }
     }
 }
